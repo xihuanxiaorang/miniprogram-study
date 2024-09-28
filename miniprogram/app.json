@@ -1,9 +1,29 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": ["pages/component/index", "pages/api/index"],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",
     "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#F7F7F7",
+    "list": [
+      {
+        "text": "组件",
+        "pagePath": "pages/component/index",
+        "iconPath": "assets/tabbar/component.png",
+        "selectedIconPath": "assets/tabbar/component-active.png"
+      },
+      {
+        "text": "接口",
+        "pagePath": "pages/api/index",
+        "iconPath": "assets/tabbar/api.png",
+        "selectedIconPath": "assets/tabbar/api-active.png"
+      }
+    ]
   },
   "resolveAlias": {
     "@/*": "/*"
