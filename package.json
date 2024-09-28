@@ -1,0 +1,26 @@
+{
+  "name": "miniprogram-study",
+  "version": "1.0.0",
+  "description": "微信小程序学习，包括组件、API、云开发、第三方组件库 Vant",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "keywords": [
+    "miniprogram",
+    "xiaorang"
+  ],
+  "author": "xiaorang",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "commitlint": "^19.5.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
