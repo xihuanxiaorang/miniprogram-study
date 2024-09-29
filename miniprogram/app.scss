@@ -1,0 +1,12 @@
+page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  font-size: 32rpx;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

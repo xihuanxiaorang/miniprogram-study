@@ -2,7 +2,23 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    activeCollapseItem: '',
+    list: [
+      { id: 'view', title: '视图容器', pages: ['view', 'scroll-view', 'swiper'] },
+      { id: 'content', title: '基础内容', pages: ['text', 'icon', 'progress', 'rich-text'] },
+      {
+        id: 'form',
+        title: '表单组件',
+        pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'radio', 'switch', 'textarea'],
+      },
+    ],
+  },
+
+  onChangeCollapseItem(e) {
+    const activeCollapseItem = e.detail
+    this.setData({ activeCollapseItem })
+  },
 
   /**
    * 生命周期函数--监听页面加载
