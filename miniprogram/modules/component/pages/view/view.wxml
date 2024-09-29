@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="section">
+    <view class="title">
+      <text>flex-direction: row</text>
+      <text>横向布局</text>
+    </view>
+    <view class="flex-wrapper">
+      <view class="item">A</view>
+      <view class="item">B</view>
+      <view class="item">C</view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="title">
+      <text>flex-direction: column</text>
+      <text>纵向布局</text>
+    </view>
+    <view class="flex-wrapper" style="flex-direction: column">
+      <view class="item item-v">A</view>
+      <view class="item item-v">B</view>
+      <view class="item item-v">C</view>
+    </view>
+  </view>
+</view>

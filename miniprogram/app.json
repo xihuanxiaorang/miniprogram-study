@@ -25,6 +25,13 @@
       }
     ]
   },
+  "subPackages": [{ "root": "modules/component", "name": "component", "pages": ["pages/view/view"] }],
+  "preloadRule": {
+    "pages/component/index": {
+      "network": "all",
+      "packages": ["component"]
+    }
+  },
   "resolveAlias": {
     "@/*": "/*"
   },
