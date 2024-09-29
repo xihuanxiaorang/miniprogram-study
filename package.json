@@ -22,5 +22,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@vant/weapp": "^1.11.6"
   }
 }
