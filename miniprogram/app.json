@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/component/index", "pages/api/index"],
+  "pages": ["pages/component/index", "pages/api/index", "pages/other/index"],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",
@@ -22,6 +22,12 @@
         "pagePath": "pages/api/index",
         "iconPath": "assets/tabbar/api.png",
         "selectedIconPath": "assets/tabbar/api-active.png"
+      },
+      {
+        "text": "其他",
+        "pagePath": "pages/other/index",
+        "iconPath": "assets/tabbar/other.png",
+        "selectedIconPath": "assets/tabbar/other-active.png"
       }
     ]
   },

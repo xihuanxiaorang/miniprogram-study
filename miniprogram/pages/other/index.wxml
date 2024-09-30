@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="header-wrapper">
+    <image class="logo" src="/assets/images/other/logo.png" />
+    <text class="desc"> 以下将展示日常开发中的代码片段、自定义组件等 </text>
+  </view>
+  <view class="collapse-wrapper">
+    <van-collapse accordion value="{{ activeCollapseItem }}" bind:change="onChangeCollapseItem">
+      <block wx:for="{{list}}" wx:key="id">
+        <van-collapse-item is-link="{{false}}" title="{{item.title}}" name="{{item.id}}">
+          <van-cell-group border="{{false}}">
+            <block wx:for="{{item.pages}}" wx:key="*this">
+              <van-cell
+                is-link
+                title="{{item}}"
+                link-type="navigateTo"
+                url="/modules/other/pages/{{item}}/{{item}}"
+                border="{{false}}"
+              />
+            </block>
+          </van-cell-group>
+          <image slot="right-icon" class="collapse-item-img" src="/assets/images/other/{{item.id}}.png" />
+        </van-collapse-item>
+      </block>
+    </van-collapse>
+  </view>
+</view>
