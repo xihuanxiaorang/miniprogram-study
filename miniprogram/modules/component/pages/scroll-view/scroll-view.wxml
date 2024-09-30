@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="section">
+    <view class="title">
+      <text>Vertical Scroll</text>
+      <text>纵向滚动</text>
+    </view>
+    <scroll-view
+      class="scroll-view-wrapper"
+      scroll-y="{{true}}"
+      scroll-into-view="item-C"
+      bindscrolltoupper="onScrollToUpper"
+      bindscrolltolower="onScrollToLower"
+      bindscroll="onScroll"
+    >
+      <view id="item-A" class="item">A</view>
+      <view id="item-B" class="item">B</view>
+      <view id="item-C" class="item">C</view>
+    </scroll-view>
+  </view>
+  <view class="section">
+    <view class="title">
+      <text>Horizontal Scroll</text>
+      <text>横向滚动</text>
+    </view>
+    <scroll-view
+      class="scroll-view-wrapper scroll-view-h"
+      scroll-x="{{true}}"
+      scroll-into-view="item-B"
+      enable-flex="{{true}}"
+      bindscrolltoupper="onScrollToUpper"
+      bindscrolltolower="onScrollToLower"
+      bindscroll="onScroll"
+    >
+      <view id="item-A" class="item item-h">A</view>
+      <view id="item-B" class="item item-h">B</view>
+      <view id="item-C" class="item item-h">C</view>
+    </scroll-view>
+  </view>
+  <view class="section">
+    <view class="title">
+      <text>下拉刷新</text>
+    </view>
+    <scroll-view
+      class="scroll-view-wrapper"
+      style="height: 800rpx"
+      scroll-y="{{true}}"
+      scroll-into-view="item-A"
+      refresher-enabled="{{true}}"
+      refresher-threshold="{{100}}"
+      refresher-triggered="{{triggered}}"
+      refresher-default-style="white"
+      refresher-background="lightgreen"
+      bindrefresherpulling="onRefresherPulling"
+      bindrefresherrefresh="onRefresherRefresh"
+      bindrefresherrestore="onRefresherRestore"
+      bindrefresherabort="onRefresherAbort"
+    >
+      <view id="item-A" class="item">A</view>
+      <view id="item-B" class="item">B</view>
+      <view id="item-C" class="item">C</view>
+    </scroll-view>
+  </view>
+</view>

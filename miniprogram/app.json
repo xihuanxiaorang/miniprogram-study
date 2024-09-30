@@ -25,7 +25,13 @@
       }
     ]
   },
-  "subPackages": [{ "root": "modules/component", "name": "component", "pages": ["pages/view/view"] }],
+  "subPackages": [
+    {
+      "root": "modules/component",
+      "name": "component",
+      "pages": ["pages/view/view", "pages/scroll-view/scroll-view"]
+    }
+  ],
   "preloadRule": {
     "pages/component/index": {
       "network": "all",
