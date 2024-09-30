@@ -1,0 +1,8 @@
+<view class="container">
+  <block wx:for="{{topMVList}}" wx:key="id">
+    <view class="item">
+      <image class="cover" src="{{item.cover}}" mode="widthFix" />
+      <view class="name">{{item.name}} - {{item.artistName}}</view>
+    </view>
+  </block>
+</view>
