@@ -1,0 +1,5 @@
+<view class="container">
+  <button class="img-btn" plain open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}" />
+  </button>
+</view>

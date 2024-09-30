@@ -36,12 +36,21 @@
       "root": "modules/component",
       "name": "component",
       "pages": ["pages/view/view", "pages/scroll-view/scroll-view"]
+    },
+    {
+      "root": "modules/other",
+      "name": "other",
+      "pages": ["pages/circular-pic-btn/circular-pic-btn"]
     }
   ],
   "preloadRule": {
     "pages/component/index": {
       "network": "all",
       "packages": ["component"]
+    },
+    "pages/other/index": {
+      "network": "all",
+      "packages": ["other"]
     }
   },
   "resolveAlias": {
