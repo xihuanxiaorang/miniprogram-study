@@ -2,7 +2,15 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    activeCollapseItem: '',
+    list: [{ id: 'framework', title: '框架', pages: [{ zh: '生命周期', url: 'lifetimes' }] }],
+  },
+
+  onChangeCollapseItem(e) {
+    const activeCollapseItem = e.detail
+    this.setData({ activeCollapseItem })
+  },
 
   /**
    * 生命周期函数--监听页面加载
