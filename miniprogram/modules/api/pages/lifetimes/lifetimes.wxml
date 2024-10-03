@@ -1,0 +1,9 @@
+<custom-component />
+
+<navigator url="/modules/api/pages/lifetimes02/lifetimes02">
+  <view class="desc">跳转到第二个页面 - navigate</view>
+</navigator>
+
+<navigator url="/modules/api/pages/lifetimes02/lifetimes02" open-type="redirect">
+  <view class="desc redirect">跳转到第二个页面 - redirect</view>
+</navigator>

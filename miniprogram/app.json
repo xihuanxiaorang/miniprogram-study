@@ -38,6 +38,11 @@
       "pages": ["pages/view/view", "pages/scroll-view/scroll-view"]
     },
     {
+      "root": "modules/api",
+      "name": "api",
+      "pages": ["pages/lifetimes/lifetimes", "pages/lifetimes02/lifetimes02"]
+    },
+    {
       "root": "modules/other",
       "name": "other",
       "pages": ["pages/circular-pic-btn/circular-pic-btn", "pages/ellipsis-text/ellipsis-text"]
@@ -47,6 +52,10 @@
     "pages/component/index": {
       "network": "all",
       "packages": ["component"]
+    },
+    "pages/api/index": {
+      "network": "all",
+      "packages": ["api"]
     },
     "pages/other/index": {
       "network": "all",
